@@ -101,6 +101,20 @@ export default {
     background: radial-gradient(ellipse at center,  rgb(255,255,255) 0%,rgb(224,242,241) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0f2f1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
+    &:hover {
+      .kc-card-back {
+        transform: rotateY(-180deg);
+        transform-style: preserve-3d;
+        z-index: -1;
+      }
+
+      .kc-card-front {
+        transform: rotateY(0deg);
+        transform-style: preserve-3d;
+        z-index: 10;
+      }
+    }
+
     &:after {
       content: "";
       position: absolute;
@@ -167,8 +181,6 @@ export default {
 
 }
 
-
-
 .kc-card-footer {
   position: absolute;
   width: 100%;
@@ -183,21 +195,5 @@ export default {
   border-radius: 50%;
   margin-left: 10px;
   box-shadow: 0px 4px 18px -8px rgba(0,0,0,0.4);
-}
-
-@media(hover: hover) and (pointer: fine) {
-  .kc-card-back:hover {
-    .kc-card-back {
-      transform: rotateY(-180deg);
-      transform-style: preserve-3d;
-      z-index: -1;
-    }
-
-    .kc-card-front {
-      transform: rotateY(0deg);
-      transform-style: preserve-3d;
-      z-index: 10;
-    }
-  }
 }
 </style>

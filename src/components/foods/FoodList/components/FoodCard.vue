@@ -63,7 +63,7 @@ export default {
   -webkit-perspective: 1000px;
           perspective: 1000px;
 
-  &:hover, &:focus {
+  &:hover, &:active {
     .kc-card-back {
       transform: rotateY(0deg);
       transform-style: preserve-3d;

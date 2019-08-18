@@ -20,7 +20,7 @@
               </label>
             </p>
 
-            <div class="sender-info">
+            <div class="sender-info field">
               <div class="field">
                 <label for="name" class="label has-text-primary">Name</label>
                 <div class="control">

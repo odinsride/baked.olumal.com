@@ -101,20 +101,6 @@ export default {
     background: radial-gradient(ellipse at center,  rgb(255,255,255) 0%,rgb(224,242,241) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0f2f1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-    &:hover {
-      .kc-card-back {
-        transform: rotateY(-180deg);
-        transform-style: preserve-3d;
-        z-index: -1;
-      }
-
-      .kc-card-front {
-        transform: rotateY(0deg);
-        transform-style: preserve-3d;
-        z-index: 10;
-      }
-    }
-
     &:after {
       content: "";
       position: absolute;
@@ -153,7 +139,7 @@ export default {
     .kc-card-title {
       font-weight: 600;
       font-size: 1.2em;
-      text-shadow: 1px 1px 6px #2b2b2b;
+      text-shadow: 1px 1px 10px #636363;
       // margin-bottom: 5px;
     }
   }

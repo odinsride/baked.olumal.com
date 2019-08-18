@@ -13,6 +13,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import Buefy from 'buefy';
+import VeeValidate from 'vee-validate'
 import DefaultLayout from '~/layouts/Default.vue'
 
 //import 'buefy/dist/buefy.css'
@@ -33,7 +34,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(Buefy, {
     defaultIconPack: 'fa',
     defaultIconComponent: 'font-awesome-icon'
-  })
+  }, VeeValidate)
 
   Vue.component('font-awesome-icon', FontAwesomeIcon)
   Vue.component('Layout', DefaultLayout)

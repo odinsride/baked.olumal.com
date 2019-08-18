@@ -23,6 +23,9 @@ module.exports = {
         route: '/foods/:slug',
       },
     },
+    {
+      use: 'vee-validate'
+    }
   ],
   transformers: {
     //Add markdown support to all file-system sources

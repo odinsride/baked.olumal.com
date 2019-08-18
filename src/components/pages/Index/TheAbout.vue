@@ -1,10 +1,14 @@
 <template>
   <section class="section" id="about">
     <div class="container">
-      <h1 class="title is-size-4 has-text-primary">About</h1>
+      <h1 class="title is-size-4 has-text-primary">About baked.</h1>
+      <div class="columns">
+        <div class="column is-10 is-offset-1">
       <p v-for="about in aboutText" :key="about" class="about-body">
         {{ about }}
       </p>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -39,6 +43,6 @@ export default {
 .about-body {
   font-weight: 500;
   font-size: 1.1rem;
-  margin-bottom: 1.0rem;
+  margin-bottom: 1.2rem;
 }
 </style>

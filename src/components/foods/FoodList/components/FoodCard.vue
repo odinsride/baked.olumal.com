@@ -63,7 +63,7 @@ export default {
   -webkit-perspective: 1000px;
           perspective: 1000px;
 
-  &:hover, &:active {
+  &:hover {
     .kc-card-back {
       transform: rotateY(0deg);
       transform-style: preserve-3d;
@@ -183,5 +183,21 @@ export default {
   border-radius: 50%;
   margin-left: 10px;
   box-shadow: 0px 4px 18px -8px rgba(0,0,0,0.4);
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .kc-card-back:hover {
+    .kc-card-back {
+      transform: rotateY(-180deg);
+      transform-style: preserve-3d;
+      z-index: -1;
+    }
+
+    .kc-card-front {
+      transform: rotateY(0deg);
+      transform-style: preserve-3d;
+      z-index: 10;
+    }
+  }
 }
 </style>
